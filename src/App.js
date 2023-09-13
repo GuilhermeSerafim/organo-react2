@@ -6,7 +6,6 @@ import Time from "./componentes/Time";
 
 function App() {
 
-  //Teste
   const times = [
     {
       nome: 'Programação',
@@ -194,6 +193,9 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
+  function deletarColaborador() {
+    console.log("Deletando colaborador");
+  }
 
   return (
     <div>
@@ -201,7 +203,14 @@ function App() {
       <Formulario times={times.map(time => time.nome)} aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])} />
       <section className="times">
         <h1>Minha organização</h1>
-        {times.map((time, indice) => <Time key={indice} time={time} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} />)}
+        {times.map((time, indice) =>
+          <Time
+            key={indice}
+            time={time}
+            colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+            aoDeletar={deletarColaborador}
+          />
+        )}
       </section>
       <Rodape />
     </div>
