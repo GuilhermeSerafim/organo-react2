@@ -6,6 +6,7 @@ import Time from "./componentes/Time";
 
 function App() {
 
+  //Teste
   const times = [
     {
       nome: 'Programação',
