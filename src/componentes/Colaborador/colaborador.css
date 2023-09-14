@@ -41,4 +41,19 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.deletar:hover {
+    transform: scale(1.4);
+}
+
+.favoritar {
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.favoritar:hover {
+    transform: scale(1.8);
 }
