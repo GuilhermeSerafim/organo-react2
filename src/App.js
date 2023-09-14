@@ -225,13 +225,19 @@ function App() {
         time.cor = cor;
       }
       return time;
-    }))
+    }));
   }
+
+  //Forma diferente
+function cadastrarTime(novoTime) {
+  setTimes([...times, {...novoTime, id: uuidv4()}])
+}
 
   return (
     <div>
       <Banner />
       <Formulario
+        cadastrarTime={cadastrarTime}
         times={times.map(time => time.nome)}
         aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}
       />
