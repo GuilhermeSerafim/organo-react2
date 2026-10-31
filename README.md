@@ -1,3 +1,11 @@
+# Organo 2 — organização de times em React
+
+Segunda versão do exercício Organo. O código de `App.js` mantém times e colaboradores em estado local e inclui funções para cadastrar times, mudar suas cores, remover colaboradores e alternar favoritos. O componente de colaborador liga os ícones de exclusão e favorito a essas funções. O manifesto declara React 18, react-icons, uuid, hex-to-rgba e react-scripts 5.
+
+A lista inicial contém dados de exemplo com imagens hospedadas pela Alura; isso não representa equipe ou usuários reais deste projeto. O aplicativo não persiste as alterações após recarregar. Alguns registros iniciais não têm `id`, embora exclusão e favoritos comparem esse campo; esses casos precisam de validação e correção antes de uso com dados reais.
+
+## Ambiente de desenvolvimento
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -25,7 +33,7 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The generated build can be used in a deployment configured for this application.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
